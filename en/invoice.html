@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERB Yachting</title>
+    <meta name="description" content="ERB Yachting" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="ERB Yachting Group" />
+    <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="../style/invoice.css">
+    <link rel="stylesheet" href="../style/invocie-print.css" media="print">
+    <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  
+  <div class="invoice">
+    <div class="invoice-flex">
+    <div class="invoice-header">
+      <div class="invoice-header-left">
+          <img src="../image/erb_logo2.png" alt="Company Logo" >
+          <h1>ERB Yachting</h1>
+          <p>Address: Kwun Tong Ferry Pier</p>
+          <p>Email: erbhk@erb.org</p>
+          <p>Phone: +852 3129 1183</p>
+          
+      </div>
+  </div>
+
+  <div class="invoice-number">
+    <img src="../favicon/favicon.png" alt="Company Logo" >
+    <h2>Invoice</h2>
+
+    <p>Invoice Number: #123456</p>
+    <p>Date: 2023-12-03</p>
+  </div>
+  </div>
+    <div class="invoice-container">
+      
+        
+        <div class="item-header">
+            <div>Item</div>
+            <div>Quantity</div>
+            <div>Unit Price</div>
+        </div>
+        <hr class="hr-1">
+        <div class="cart-items"></div>
+        <hr class="hr-2">
+        <div class="cart-noOfItems">
+          <h3>CART</h3>
+          <p class="noOfItems">0 items</p>
+        </div>       
+        <div class="cart-footer">
+          <h2>Total</h2>
+          <p class="total">$0</p>
+        </div>
+        
+      </div>    
+  
+  
+    <div class="invoice-footer">
+      <div class="text-center mt-3">
+<p class="thanks">Thank you for your support</p>
+
+ <a href="#" id="lnkPrint">Print</a>
+<br>
+<br>
+ <a href="index.html">Return Home</a>
+
+</div>
+    </div>
+  </div>
+<script src="../script/invocie-print.js"></script>
+    <script src="../script/script_invoice.js"></script>
+   
+   
+</body>
+</html>
