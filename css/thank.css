@@ -1,25 +1,107 @@
+:root {
+   
+    --clr-primary-1: #fee4e2;
+    --clr-primary-2: #ffccc9;
+    --clr-primary-3: #fdaaa4;
+    --clr-primary-4: #fa786f;
+    --clr-primary-5: #f24c41;
+    --clr-primary-6: #df2f23;
+    --clr-primary-7: #c7261b;
+    --clr-primary-8: #9b2119;
+    --clr-primary-9: #81221b;
+    --clr-primary-10: #460d09;
+    /* define gray shade */
+    /* for paragraph */
+    --clr-gray-1: #f6f6f6;
+    --clr-gray-2: #efefef;
+    --clr-gray-3: #dbdbdb;
+    --clr-gray-4: #c6c6c6;
+    --clr-gray-5: #aeaeae;
+    --clr-gray-6: #898989;
+    /* for heading */
+    --clr-gray-7: #707070;
+    --clr-gray-8: #575757;
+    --clr-gray-9: #464646;
+    --clr-gray-10: #3e3e3e;
+    --clr-white : #fff;
+    --ff-primary : "Poppins", sans-serif;
+    --transition : all 0.3s linear;
+    --spacing : 0.25rem;
+    --radius : 0.5rem;
+    --light-shadow : 0 5px 15px rgba(0,0,0,0.1);
+    --dark-shadow : 0 5px 15px rgba(0,0,0,0.2);
+    --navbar-Height: 4rem;
+}
+@media(min-width:768px){
+    .thank-info{
+        margin-bottom: 10px;
+        text-align: center;
+    }
 .thank-you-h2{
     font-size: 72px;
     font-family: 'Times New Roman', Times, serif;
+    color: var(--clr-primary-6);
+}
+.thank-you-h2 span{
+    color: var(--clr-primary-8);
 }
 .fa-check{
     font-size: 148px;
     color: green;
     font-weight: bold;
 }
-.thank-you-p{
+p.thank-you-p{
     font-size: 24px;
     font-weight: bold;
+    color: var(--clr-primary-6);
 }
 .thank-you-a{
     text-decoration: none;
-    color: #ffd900;
+    color: var(--clr-primary-6);
     font-weight: bold;
     font-size: 20px;
 }
 .thank-you-a:hover{
-    color: cyan;
+    color: var(--clr-primary-8);
 }
 .thank-you-a:active{
-    color:red;
+    color:var(--clr-primary-10);
 }
+}
+@media(max-width:768px){
+    .thank-info{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .thank-you-h2{
+        font-size: 72px;
+        font-family: 'Times New Roman', Times, serif;
+        color: var(--clr-gray-2);
+    }
+    .thank-you-h2 span{
+        color: var(--clr-gray-4);
+    }
+    .fa-check{
+        font-size: 148px;
+        color: green;
+        font-weight: bold;
+    }
+    p.thank-you-p{
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--clr-gray-2);
+    }
+    .thank-you-a{
+        text-decoration: none;
+        color: var(--clr-gray-2);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .thank-you-a:hover{
+        color: var(--clr-gray-4);
+    }
+    .thank-you-a:active{
+        color:var(--clr-gray-6);
+    }
+    }
+    

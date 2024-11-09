@@ -19,10 +19,9 @@ startGame()
 
 function startGame() {
     myGameArea = new gamearea();
-    myGamePiece = new component(50, 50, "../image/sail.png", 10, 120, "image");
-    mySound = new sound("https://www.w3schools.com/graphics/bounce.mp3");
-    myMusic = new sound("https://www.w3schools.com/graphics/gametheme.mp3");
-    myMusic.play();
+    myGamePiece = new component(50, 50, "../images/sail.png", 10, 120, "image");
+
+
     myscore = new component("30px", "Open Sans", "red", 280, 40, "text");
     myGameArea.start();
 }
@@ -96,8 +95,8 @@ function updateGameArea() {
     var x, y, min, max, height, gap;
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
-            mySound.play();
-            myMusic.stop();  
+
+
             myGameArea.stop();
             document.getElementById("myfilter").style.display = "block";
             document.getElementById("myrestartbutton").style.display = "block";
@@ -117,8 +116,8 @@ function updateGameArea() {
             min = 100
             max = 150;
             gap = Math.floor(Math.random()*(max-min+1)+min);
-            myObstacles.push(new component(10, height, "../image/rockwall.png", x, 0, "image"));
-            myObstacles.push(new component(10, x - height - gap, "../image/rockwall.png", x, height + gap, "image"));
+            myObstacles.push(new component(10, height, "../images/rockwall.png", x, 0, "image"));
+            myObstacles.push(new component(10, x - height - gap, "../images/rockwall.png", x, height + gap, "image"));
 
 
         }
@@ -133,20 +132,6 @@ function updateGameArea() {
         myGamePiece.update();
     }
 }
-function sound(src) {
-    this.sound = document.createElement("audio");
-    this.sound.src = src;
-    this.sound.setAttribute("preload", "auto");
-    this.sound.setAttribute("controls", "none");
-    this.sound.style.display = "none";
-    document.body.appendChild(this.sound);
-    this.play = function(){
-        this.sound.play();
-    }
-    this.stop = function(){
-        this.sound.pause();
-    }    
-}
 
 function everyinterval(n) {
     if ((myGameArea.frameNo / n) % 1 == 0) {return true;}
@@ -154,27 +139,27 @@ function everyinterval(n) {
 }
 
 function moveup(e) {
-    myGamePiece.image.src = "../image/fast-sail.png";
+    myGamePiece.image.src = "../images/fast-sail.png";
     myGamePiece.speedY = -5; 
 }
 
 function movedown() {
-    myGamePiece.image.src = "../image/fast-sail.png";
+    myGamePiece.image.src = "../images/fast-sail.png";
     myGamePiece.speedY = 5; 
 }
 
 function moveleft() {
-    myGamePiece.image.src = "../image/fast-sail.png";
+    myGamePiece.image.src = "../images/fast-sail.png";
     myGamePiece.speedX = -5; 
 }
 
 function moveright() {
-    myGamePiece.image.src = "../image/fast-sail.png";
+    myGamePiece.image.src = "../images/fast-sail.png";
     myGamePiece.speedX = 5; 
 }
 
 function clearmove(e) {
-    myGamePiece.image.src = "../image/sail.png";
+    myGamePiece.image.src = "../images/sail.png";
     myGamePiece.speedX = 0; 
     myGamePiece.speedY = 0; 
 }

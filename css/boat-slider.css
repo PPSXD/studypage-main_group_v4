@@ -14,6 +14,9 @@
 .slide{
   border: 5px solid white;
 }
+#slides{
+    text-align: center;
+}
 
 .slide:hover{
   cursor: pointer;

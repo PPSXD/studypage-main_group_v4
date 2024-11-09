@@ -3,138 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERB Yachting</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/dropdown.css">
-    <link rel="stylesheet" href="../style/contact.css">
-    <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../style/game-logo.css">
-    <link rel="stylesheet" href="../style/logo.css">
-    <script src="../script/index.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/about.css">
+<link rel="stylesheet" href="../css/contact.css">
+
+<title>ERB Yachting</title>
 </head>
 <body>
-  
-  <div>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html"><img src="../images/erb_logo2.png" class="logo-link" alt="logo"></a>
+        </div>
+        <div class="nav-links">
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html" class="nav-link">home</a></li>
+                <li><a href="about.html" class="nav-link">about us</a></li>
+                <li><a href="main.html" class="nav-link">rent yacht</a></li>
+                <!-- <li><a href="#services" class="nav-link">enquiry</a></li> -->
+                <li><a href="enquiry.html" class="nav-link">enquiry</a></li>
+                <!-- <li><a href="#tours" class="nav-link">contact us</a></li> -->
+                <li><a href="contact.html" class="nav-link">contact us</a></li>
+            </ul>
+        </div>
+        <div class="nav-icons">
+            <ul class="nav-icons-list">
+                <li>
+                    <a href="game.html" title="game" class="nav-icon">
+                        <i class="fa-solid fa-gamepad fa-2xs"  id="mark-3"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="sitemap.html" title="sitemap" class="nav-icon">
+                        <i class="fa-solid fa-sitemap" id="mark-1"></i>
+                      </a>
+                </li>
+      
+                <div class="nav-language">
+                    <button type="button" class="nav-language-toggle" id="nav-language-toggle">
+                        <i class="fa-solid fa-language" id="mark-2"></i>
+                    </button>
+                    <ul class="language-nav-list" id="language-nav-list">
+                    <li><a href="../tc/index.html" class="language-nav-link" title="繁體中文">繁體中文</a></li>
+                    <li><a href="../sc/index.html" class="language-nav-link" title="簡體中文">簡體中文</a></li>
+                  </div>       
+                </ul>
+                </div>
+        </div>
+        <!-- mobile hamburger -->
+        <div class="nav-mobile">
+            <button type="button" class="nav-mobile-toggle" id="nav-mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+                <ul class="mobile-nav-list" id="mobile-nav-list">
+                <li><a href="#home" class="mobile-nav-link">home</a></li>
+                <li><a href="about.html" class="mobile-nav-link">about us</a></li>
+                <li><a href="#main" class="mobile-nav-link">rent yacht</a></li>
+                <!-- <li><a href="#services" class="mobile-nav-link">enquiry</a></li> -->
+                <li><a href="enquiry.html" class="mobile-nav-link">enquiry</a></li>
+                <!-- <li><a href="#tours" class="mobile-nav-link">contact us</a></li> -->
+                <li><a href="contact.html" class="mobile-nav-link">contact us</a></li>
+                <li><a href="game.html" class="mobile-nav-link">game</a></li>
+                <li><a href="sitemap.html" class="mobile-nav-link">sitemap</a></li>
+                <li><a href="../tc/index.html" class="lmobile-nav-link" title="繁體中文">繁體中文</a></li>
+                <li><a href="../sc/index.html" class="mobile-nav-link" title="簡體中文">簡體中文</a></li>
+                </ul>
+        </div>
+    </nav>
+<div>
     <video class="background-video"  autoplay muted loop style="margin: auto;">
-      <source src="../video/background-video-1.mp4" type="video/mp4">
+        <source src="../video/background-video-1.mp4" type="video/mp4">
     </video>
-    <div class="language-bar">
-      <a href="game.html"><i class="fa-solid fa-gamepad fa-2xs"  id="mark-3"></i></a>
-      <!-- <span><a href="en/sitemap.html" class="sitemap-heading" title="sitemap"><span><img src="image/sitemap.png" alt="sitemap" class="sitemap-heading-img"></span></a></span> -->
-  
-          
-        <a href="sitemap.html" title="sitemap">
-          <i class="fa-solid fa-sitemap" id="mark-1"></i>
-        </a>
-  
-      <div class="language-drop-down-bar-button">
-        <button><i class="fa-solid fa-language" id="mark-2"></i></button>
-        <div class="language-bar-button-content">
-        <div class="language"><a href="../tc/index.html" title="繁">繁</a></div>
-        <div class="language"><a href="../sc/index.html" title="簡">簡</a></div>
-      </div>    
-    </div>
-    </div>
-      <span><a href="../index.html" class="boat-heading"><span><img src="../image/erb_logo2.png" alt="ERB Yachting & Charter" class="heading-img"></span></a></span>
-      <div id="main_container" style="width:100%">
-        <div id="main_header" class="main_title">
-            <h1 class="H1-Main-Title">Contact Us</h1>
-            <div class="navbar">
-                <div class="navbar-ul">
-                    <a class="bar-button" id="menu_yacht" href="index.html"><strong>Home</strong></a>
-                    <!-- <strong>​主頁</strong> -->
-                    <!-- <div class="drop-down-bar-button" id="menu_yacht"> -->
-                      <a class="bar-button" id="menu_yacht" href="main.html"><strong>Rent yacht</strong></a>
-                      <!-- <button onclick="main_en()"><strong>Rent yacht</strong></button> -->
-                      <!-- <div class="bar-button-content"> -->
-                        <!-- <a class="bar-button-1" id="menu_yacht" href="service.html"><strong>Rent yacht service</strong></a> -->
-                        <!-- <strong>遊艇服務</strong> -->  
-                        <!-- <a class="bar-button-2" id="menu_yacht" href="boat.html"><strong>Rent yacht boat</strong></a> -->
-                        <!-- <strong>遊艇船</strong> -->  
-                      <!-- </div> -->
-                  <!-- </div> -->
-                    <!-- <strong>遊艇出租</strong> -->             
-                    <a class="bar-button" id="menu_yacht" href="about.html"><strong>About us</strong></a>
-                     <!-- <strong>關於我們</strong> -->
-                     <a class="bar-button" id="menu_yacht" href="enquiry.html"><strong>Enquiry</strong></a>
-                     <!-- <strong>查詢</strong> -->
-                     <strong class="bar-button" id="menu_yacht">Contact Us</strong>
-                     <!-- <strong>查詢</strong> -->
+    <!-- <section class="hero" id="home">
+      
+        <div class="hero-banner">
+            <h2 class="hero-h2">Home</h2>
+            <div class="slider">
+                <div class="slides">
+                    <img onclick="cover1()" class="slide" src="../images/cover1.png" alt="38 Surf">
+                    <img onclick="cover2()" class="slide" src="../images/cover2.png" alt="Regal LS4">
+                    <img onclick="cover3()" class="slide" src="../images/cover3.png" alt="Regal 42 Fly">
+                    <img onclick="cover4()" class="slide" src="../images/cover4.png" alt="Regal 38 Grande">
+                    <img onclick="cover5()" class="slide" src="../images/cover5.png" alt="Beneteau Oceanis 60">
+                    <img onclick="cover6()" class="slide" src="../images/cover6.png" alt="Oceanco-Black-Pearl">
+                    <img onclick="cover7()" class="slide" src="../images/cover7.png" alt="Bali 5.8">
                 </div>
+                <button class="prev" onclick="prevSlide()">&#10094</button>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+        </div>
+    </section> -->
+<!-- </div> -->
+    <!-- about -->
+    <section class="section" id="about">
+        <div class="section-title">
+            <h2>Open <span>Hours</span></h2>
+        </div>
+        <div class="table-center">
 
-                <h2>Open Hours</h2>
-
+            <article class="about-info">
+                <!-- <h3>explore the difference</h3> -->
                 <table>
-                 <tr >
-                     <th >Week</th>
-                     <th >Time</th>
-                 </tr>
-             <tr >
-                 <td >Sunday</td>
-                 <td >Closed</td>
+                  <tr >
+                      <th >Week</th>
+                      <th >Time</th>
+                  </tr>
+              <tr >
+                  <td >Sunday</td>
+                  <td >Closed</td>
+              </tr>
+              <tr >
+               <td >Monday</td>
+               <td >9 a.m. to 5p.m.</td>
+           </tr>
+           <tr >
+             <td >Tuesday</td>
+             <td >9 a.m. to 5p.m.</td>
              </tr>
-             <tr >
-              <td >Monday</td>
-              <td >9 a.m. to 5p.m.</td>
-          </tr>
-          <tr >
-            <td >Tuesday</td>
-            <td >9 a.m. to 5p.m.</td>
-            </tr>
-        <tr >
-          <td >Wednesday</td>
-          <td >9 a.m. to 5p.m.</td>
-      </tr>
-      <tr >
-        <td >Thursday</td>
-        <td >9 a.m. to 5p.m.</td>
-    </tr>
-    <tr >
-      <td >Friday</td>
-      <td >9 a.m. to 5p.m.</td>
-  </tr>
-  <tr >
-    <td >Saturday</td>
-    <td >10 a.m. to 2p.m.</td>
-</tr>
-<tr >
-  <td >Public Holidays</td>
-  <td >Closed</td>
-</tr>
-             </table>
+         <tr >
+           <td >Wednesday</td>
+           <td >9 a.m. to 5p.m.</td>
+       </tr>
+       <tr >
+         <td >Thursday</td>
+         <td >9 a.m. to 5p.m.</td>
+     </tr>
+     <tr >
+       <td >Friday</td>
+       <td >9 a.m. to 5p.m.</td>
+   </tr>
+   <tr >
+     <td >Saturday</td>
+     <td >10 a.m. to 2p.m.</td>
+ </tr>
+ <tr >
+   <td >Public Holidays</td>
+   <td >Closed</td>
+ </tr>
+              </table>
+ 
+ 
+                 <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7382.397686987232!2d114.2234344310752!3d22.308318401850837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040143fee1e02f%3A0xe6489affb46b486!2z6aaZ5riv6KeA5aGY5qau5qWt6KGX6KeA5aGY5rih6Lyq56K86aCt!5e0!3m2!1szh-TW!2sus!4v1730213365021!5m2!1szh-TW!2sus"width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                 
+ 
+                 <p class="address"><strong>Our Location:</strong></p>
+                 <p class="address">Kwun Tong Ferry Pier</p>
+ 
+                 <span><a class="back-to-top" href="#Top">Back to Top</a></span>
+                </div>            
+                <!-- <a href="#about" class="btn">read more</a> -->
+            </article>
+        </div>
+    </section>
+    </div>
+    <!-- services -->
+     
+     <!-- <section class="section" id="services">
+        <div class="section-title">
+            <h2>our <span>services</span></h2>
+        </div>
+            <div class="section-center services-center">
+              
+                <article class="service">
+                    <span class="service-icon">
+                        <i class="fa-solid fa-wallet"></i>
+                    </span>
+                    <div class="service-info">
+                        <h4 class="service-title">
+                            saving money
+                        </h4>
+                        <p class="service-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi minima at deleniti tempore sint, quasi aut dicta porro doloribus sapiente.</p>
+                    </div>
+                </article>
 
+                <article class="service">
+                    <span class="service-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </span>
+                    <div class="service-info">
+                        <h4 class="service-title">
+                            robot info
+                        </h4>
+                        <p class="service-text"></p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi minima at deleniti tempore sint, quasi aut dicta porro doloribus sapiente.</p>
+                    </div>
+                </article>
 
-                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7382.397686987232!2d114.2234344310752!3d22.308318401850837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040143fee1e02f%3A0xe6489affb46b486!2z6aaZ5riv6KeA5aGY5qau5qWt6KGX6KeA5aGY5rih6Lyq56K86aCt!5e0!3m2!1szh-TW!2sus!4v1730213365021!5m2!1szh-TW!2sus"width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                
-
-                <p class="address"><strong>Our Location:</strong></p>
-                <p class="address">Kwun Tong Ferry Pier</p>
-
-                <span><a class="back-to-top" href="#Top">Back to Top</a></span><br><br>
-                
-                <div class="flex-icon">
-                 <div class="icon"> <a href="tel:31291183"><i class="fa-solid fa-phone"></i></a></div>
-                <div class="icon">
-                    <a href="mailto:erbhk@erb.org?subject=Welcome to ERB Yachting, What can I help you?"><i class="fa-solid fa-envelope"></i></a>
+                <article class="service">
+                    <span class="service-icon">
+                        <i class="fa-solid fa-person-rifle"></i>
+                    </span>
+                    <div class="service-info">
+                        <h4 class="service-title">
+                             fight
+                        </h4>
+                        <p class="service-text"></p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi minima at deleniti tempore sint, quasi aut dicta porro doloribus sapiente.</p>
+                    </div>
+                </article>
+            </div>
+        </section> -->
+        <!-- <section class="section" id="tours" > -->
+            <!-- <section class="section" id="main" >
+                    <div class="section-title">
+                        <h2>rent <span>yacht</span></h2> 
+                    </div>
+        <div class="section-center main-center">
+             <article class="main-card">
+                <div class="main-img-container"> -->
+                    <!-- <div>  -->
+                        <!-- <a href="service.html" class="service-heading" title="service">
+                          <img class="service-heading-img-off" src="../images/yacht_charter_services.png">
+                          <img class="service-heading-img-on" src="../images/yacht_charter_services_dark.png">
+                        </a>
+                      </div>
                 </div>
-                <div class="icon"><a href="https://www.facebook.com/MyERB"><i class="fa-brands fa-square-facebook"></i></a></div>
-                <div class="icon"><a href="https://www.instagram.com/captaink_erb/"><i class="fa-brands fa-instagram"></i></a></div>
+
+
+             </article>
+             <article class="main-card">
+                <div class="main-img-container">
+                    <div> 
+                        <a href="boat.html" class="boat-heading" title="boat">
+                          <img class="boat-heading-img-off" src="../images/yacht_charter_boat.png">
+                          <img class="boat-heading-img-on" src="../images/yacht_charter_boat_dark.png">
+                        </a>
+                      </div>                   
                 </div>
 
-              <div class="main_footer">
-                <strong class="main-footer-text">©Copyright 2024 ERB Yachting All Rights Reserved.</strong>
+             </article>
+</div>
+        </section> -->
+<footer class="section footer">
+    <ul class="footer-icons">
+        <li>
+            <a href="tel:31291183" class="footer-icon">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:erbhk@erb.org?subject=Welcome to ERB Yachting, What can I help you?" class="footer-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/MyERB" class="footer-icon">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/captaink_erb/" class="footer-icon">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </li>
+    </ul>
+    <ul class="footer-links">
+        <li><a href="index.html" class="footer-link">home</a></li>
+        <li><a href="about.html" class="footer-link">about us</a></li>
+        <li><a href="main.html" class="footer-link">rent yacht</a></li>
+        <!-- <li><a href="#services" class="footer-link">enquiry</a></li> -->
+        <li><a href="enquiry.html" class="footer-link">enquiry</a></li>
+        <!-- <li><a href="#tours" class="footer-link">contact us</a></li> -->
+        <li><a href="contact.html" class="footer-link">contact us</a></li>
+    </ul>
+    <ul class="footer-icons">
+        <li>
+            <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank" title="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1">
+                <img src="../images/wcag2.1AA-v.gif" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1" class="footer-icon" id="footer-icon-1">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.digitalpolicy.gov.hk/our_work/digital_government/digital_inclusion/accessibility/nurturing_expertise/" target="_blank" title="Web Accessibility Recognition Scheme">
+                <img src="../images/wa_gold_logo.jpg" alt="Web Accessibility Recognition Scheme" class="footer-icon" id="footer-icon-2">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.brandhk.gov.hk/" target="_blank" title="Brand Hong Kong">
+                <img src="../images/logo_brandhk_en.png" alt="Brand Hong Kong" class="footer-icon" id="footer-icon-3">
+            </a>
+        </li>
+    </ul>
+    <p class="copyright">
+        copyright &copy; ERB Yachting all right reserved<span id="date"></span>
+    </p>
+</footer>
 
-             <div class="main_footer_images">
-                <div class="footer_image"><a href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank" title="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1"><img src="../image/wcag2.1AA-v.gif" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1"></a></div>
-                <div class="footer_image"><a href="https://www.digitalpolicy.gov.hk/en/our_work/digital_government/digital_inclusion/accessibility/nurturing_expertise/" target="_blank" title="Web Accessibility Recognition Scheme"><img src="../image/wa_gold_logo.jpg" alt="Web Accessibility Recognition Scheme"></a></div>
-                <div class="footer_image" id="footer_image_special_logo"><a href="https://www.brandhk.gov.hk/en/" target="_blank" title="Brand Hong Kong"><img src="../image/logo_brandhk_en.png" alt="Brand Hong Kong"></a></div>
-              </div>
-          </div>
-      </div>
-      </div>
-      </div>
-      <script src="../script/script_logo.js"></script>
+<script src="../script/script_logo.js"></script>
+    <script src="../script/app.js"></script>
 </body>
 </html>

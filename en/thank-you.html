@@ -3,99 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ERB Yachting</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/dropdown.css">
-    <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../style/game-logo.css">
-    <link rel="stylesheet" href="../style/logo.css">
-    <link rel="stylesheet" href="../style/thank.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="../css/thank.css">
+<link rel="stylesheet" href="../css/style.css">
 
-
+<title>ERB Yachting</title>
 </head>
 <body>
-    <div>
-        <video class="background-video"  autoplay muted loop style="margin: auto;">
-          <source src="../video/background-video-3.mp4" type="video/mp4">
-        </video>
-        <!-- <source src="../video/rain.mp4" type="video/mp4"> -->
-  
-     <!-- <strong>網站地圖</strong> -->
-     <div class="language-bar">
-      <a href="game.html"><i class="fa-solid fa-gamepad fa-2xs"  id="mark-3"></i></a>
-      <!-- <span><a href="en/sitemap.html" class="sitemap-heading" title="sitemap"><span><img src="image/sitemap.png" alt="sitemap" class="sitemap-heading-img"></span></a></span> -->
-  
-          
-        <a href="sitemap.html" title="sitemap">
-          <i class="fa-solid fa-sitemap" id="mark-1"></i>
-        </a>
-  
-      <div class="language-drop-down-bar-button">
-        <button><i class="fa-solid fa-language" id="mark-2"></i></button>
-        <div class="language-bar-button-content">
-        <div class="language"><a href="../tc/index.html" title="繁">繁</a></div>
-        <div class="language"><a href="../sc/index.html" title="簡">簡</a></div>
-      </div>    
-    </div>
-    </div>
-   <span><a href="../index.html" class="boat-heading"><span><img src="../image/erb_logo2.png" alt="ERB Yachting & Charter" class="heading-img"></span></a></span>
-    <div id="main_container" style="width:100%">
-      <div id="main_header" class="main_title">
-          <h1 class="H1-Main-Title">Enquiry</h1>
-          <div class="navbar">
-            <div class="navbar-ul">
-                <a  class="bar-button" id="menu_yacht" href="index.html"><strong>Home</strong></a>
-                <!-- <strong>​主頁</strong> -->
-                <!-- <div class="drop-down-bar-button" id="menu_yacht"> -->
-                  <a class="bar-button" id="menu_yacht" href="main.html"><strong>Rent yacht</strong></a>
-                  <!-- <button onclick="main_en()" class="bar-main-button"><strong>Rent yacht</strong></button> -->
-                  <!-- <div class="bar-button-content"> -->
-                    <!-- <a class="bar-button-1" id="menu_yacht" href="service.html"><strong>Rent yacht service</strong></a> -->
-                    <!-- <strong>遊艇服務</strong> -->  
-                    <!-- <a class="bar-button-2" id="menu_yacht" href="boat.html"><strong>Rent yacht boat</strong></a> -->
-                    <!-- <strong>遊艇船</strong> -->  
-                  <!-- </div> -->
-              <!-- </div> -->
-                <!-- <strong>遊艇出租</strong> -->             
-                <a class="bar-button" id="menu_yacht" href="about.html"><strong>About us</strong></a>
-                 <!-- <strong>關於我們</strong> -->
-                 <a class="bar-button" id="menu_yacht" href="enquiry.html"><strong>Enquiry</strong></a>
-                 <!-- <strong>查詢</strong> -->
-                 <a class="bar-button" id="menu_yacht" href="contact.html"><strong>Contact us</strong></a>
-                 <!-- <strong>查詢</strong> -->
-            </div>
-            
-            <!-- <video width="100%" height="100%" autoplay="autoplay" muted loop>
-              <source src="video/AFA-masthead.mp4" type="video/mp4">
-            </video> -->
-  
-
-<h2 class="thank-you-h2">Thank you!!!</h2>
-<i class="fa fa-check"></i>
-<p class="thank-you-p">Thank you for your question, we would as soon as reply you.</p>
-<a class="thank-you-a" href="../en/index.html">Back to Home Page</a>
-
-
-
-          <!-- <img src="content/image1.jpg" width="100%" height="100%"> -->
-          <!-- <img src="/ship/sail/image1.jpg" width="100%" height="30%"> -->
-    </div>
-            <div class="main_footer">
-           <strong class="main-footer-text">©Copyright 2024 ERB Yachting All Rights Reserved.</strong>
-           <div class="main_footer_images">
-            <div class="footer_image"><a href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank" title="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1"><img src="../image/wcag2.1AA-v.gif" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1"></a></div>
-            <div class="footer_image"><a href="https://www.digitalpolicy.gov.hk/en/our_work/digital_government/digital_inclusion/accessibility/nurturing_expertise/" target="_blank" title="Web Accessibility Recognition Scheme"><img src="../image/wa_gold_logo.jpg" alt="Web Accessibility Recognition Scheme"></a></div>
-            <div class="footer_image" id="footer_image_special_logo"><a href="https://www.brandhk.gov.hk/en/" target="_blank" title="Brand Hong Kong"><img src="../image/logo_brandhk_en.png" alt="Brand Hong Kong"></a></div>
-          </div>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="index.html"><img src="../images/erb_logo2.png" class="logo-link" alt="logo"></a>
         </div>
-    </div>
-    </div>
-    </div>
+        <div class="nav-links">
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html" class="nav-link">home</a></li>
+                <li><a href="about.html" class="nav-link">about us</a></li>
+                <li><a href="main.html" class="nav-link">rent yacht</a></li>
+                <li><a href="enquiry.html" class="nav-link">enquiry</a></li>
+                <li><a href="contact.html" class="nav-link">contact us</a></li>
+            </ul>
+        </div>
+        <div class="nav-icons">
+            <ul class="nav-icons-list">
+                <li>
+                    <a href="game.html" title="game" class="nav-icon">
+                        <i class="fa-solid fa-gamepad fa-2xs"  id="mark-3"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="sitemap.html" title="sitemap" class="nav-icon">
+                        <i class="fa-solid fa-sitemap" id="mark-1"></i>
+                      </a>
+                </li>
+      
+                <div class="nav-language">
+                    <button type="button" class="nav-language-toggle" id="nav-language-toggle">
+                        <i class="fa-solid fa-language" id="mark-2"></i>
+                    </button>
+                    <ul class="language-nav-list" id="language-nav-list">
+                    <li><a href="../tc/index.html" class="language-nav-link" title="繁體中文">繁體中文</a></li>
+                    <li><a href="../sc/index.html" class="language-nav-link" title="簡體中文">簡體中文</a></li>
+                  </div>       
+                </ul>
+                </div>
+        </div>
+        <!-- mobile hamburger -->
+        <div class="nav-mobile">
+            <button type="button" class="nav-mobile-toggle" id="nav-mobile-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+                <ul class="mobile-nav-list" id="mobile-nav-list">
+                <li><a href="#home" class="mobile-nav-link">home</a></li>
+                <li><a href="about.html" class="mobile-nav-link">about us</a></li>
+                <li><a href="#main" class="mobile-nav-link">rent yacht</a></li>
+                <!-- <li><a href="#services" class="mobile-nav-link">enquiry</a></li> -->
+                <li><a href="enquiry.html" class="mobile-nav-link">enquiry</a></li>
+                <!-- <li><a href="#tours" class="mobile-nav-link">contact us</a></li> -->
+                <li><a href="contact.html" class="mobile-nav-link">contact us</a></li>
+                <li><a href="game.html" class="mobile-nav-link">game</a></li>
+                <li><a href="sitemap.html" class="mobile-nav-link">sitemap</a></li>
+                <li><a href="../tc/index.html" class="lmobile-nav-link" title="繁體中文">繁體中文</a></li>
+                <li><a href="../sc/index.html" class="mobile-nav-link" title="簡體中文">簡體中文</a></li>
+                </ul>
+        </div>
+    </nav>
+<div>
+    <video class="background-video"  autoplay muted loop style="margin: auto;">
+        <source src="../video/background-video-3.mp4" type="video/mp4">
+    </video>
+    <section class="section" id="about">
+      
+
+            <div class="section-title">
+            <h2 class="hero-h2">Enquiry</h2>
+            </div>
+            <article class="thank-info">
+            <h3 class="thank-you-h2">Thank <span>you!!!</span></h3>
+            <i class="fa fa-check"></i>
+            <p class="thank-you-p">Thank you for your question, we would as soon as reply you.</p>
+            <a class="thank-you-a" href="../en/index.html">Back to Home Page</a>
+  </article>
+
+    </section>
+</div>
+    <!-- about -->
+    <!-- <section class="section" id="about">
+        <div class="section-title">
+            <h2>about <span>us</span></h2>
+        </div>
+        <div class="section-center about-center">
+            <div class="about-img">
+                <img src="../images/about.png" class="about-photo" alt="awesome landscape">
+            </div>
+            <article class="about-info">
+                <h3>explore the difference</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet repellendus sit corrupti. Pariatur aliquam, debitis amet rem repellendus dolorum corrupti provident id quos non.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus amet repellendus sit corrupti. Pariatur aliquam, debitis amet rem repellendus dolorum corrupti provident id quos non.</p>
+            <a href="#about" class="btn">read more</a>
+            </article>
+        </div>
+    </section> -->
+    <!-- services -->
+     
+     <!-- <section class="section" id="services">
+        <div class="section-title">
+            <h2>our <span>services</span></h2>
+        </div>
+            <div class="section-center services-center">
+              
+                <article class="service">
+                    <span class="service-icon">
+                        <i class="fa-solid fa-wallet"></i>
+                    </span>
+                    <div class="service-info">
+                        <h4 class="service-title">
+                            saving money
+                        </h4>
+                        <p class="service-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi minima at deleniti tempore sint, quasi aut dicta porro doloribus sapiente.</p>
+                    </div>
+                </article>
+
+                <article class="service">
+                    <span class="service-icon">
+                        <i class="fa-solid fa-robot"></i>
+                    </span>
+                    <div class="service-info">
+                        <h4 class="service-title">
+                            robot info
+                        </h4>
+                        <p class="service-text"></p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi minima at deleniti tempore sint, quasi aut dicta porro doloribus sapiente.</p>
+                    </div>
+                </article>
+
+                <article class="service">
+                    <span class="service-icon">
+                        <i class="fa-solid fa-person-rifle"></i>
+                    </span>
+                    <div class="service-info">
+                        <h4 class="service-title">
+                             fight
+                        </h4>
+                        <p class="service-text"></p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi minima at deleniti tempore sint, quasi aut dicta porro doloribus sapiente.</p>
+                    </div>
+                </article>
+            </div>
+        </section> -->
+        <!-- <section class="section" id="tours" > -->
+          
 
 
-    <script src="../script/script_logo.js"></script>
+<footer class="section footer">
+    <ul class="footer-icons">
+        <li>
+            <a href="tel:31291183" class="footer-icon">
+                <i class="fa-solid fa-phone"></i>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:erbhk@erb.org?subject=Welcome to ERB Yachting, What can I help you?" class="footer-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.facebook.com/MyERB" class="footer-icon">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/captaink_erb/" class="footer-icon">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </li>
+    </ul>
+    <ul class="footer-links">
+        <li><a href="index.html" class="footer-link">home</a></li>
+        <li><a href="about.html" class="footer-link">about us</a></li>
+        <li><a href="main.html" class="footer-link">rent yacht</a></li>
+        <!-- <li><a href="#services" class="footer-link">enquiry</a></li> -->
+        <li><a href="enquiry.html" class="footer-link">enquiry</a></li>
+        <!-- <li><a href="#tours" class="footer-link">contact us</a></li> -->
+        <li><a href="contact.html" class="footer-link">contact us</a></li>
+    </ul>
+    <ul class="footer-icons">
+        <li>
+            <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" target="_blank" title="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1">
+                <img src="../images/wcag2.1AA-v.gif" alt="Level Double-A conformance, W3C WAI Web Content Accessibility Guidelines 2.1" class="footer-icon" id="footer-icon-1">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.digitalpolicy.gov.hk/our_work/digital_government/digital_inclusion/accessibility/nurturing_expertise/" target="_blank" title="Web Accessibility Recognition Scheme">
+                <img src="../images/wa_gold_logo.jpg" alt="Web Accessibility Recognition Scheme" class="footer-icon" id="footer-icon-2">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.brandhk.gov.hk/" target="_blank" title="Brand Hong Kong">
+                <img src="../images/logo_brandhk_en.png" alt="Brand Hong Kong" class="footer-icon" id="footer-icon-3">
+            </a>
+        </li>
+    </ul>
+    <p class="copyright">
+        copyright &copy; ERB Yachting all right reserved<span id="date"></span>
+    </p>
+</footer>
+
+<script src="../script/script_logo.js"></script>
+    <script src="../script/app.js"></script>
 </body>
 </html>
-

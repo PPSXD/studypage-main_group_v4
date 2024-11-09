@@ -1,6 +1,109 @@
+/* ===========global variable=========== */
+:root {
+   
+  --clr-primary-1: #fee4e2;
+  --clr-primary-2: #ffccc9;
+  --clr-primary-3: #fdaaa4;
+  --clr-primary-4: #fa786f;
+  --clr-primary-5: #f24c41;
+  --clr-primary-6: #df2f23;
+  --clr-primary-7: #c7261b;
+  --clr-primary-8: #9b2119;
+  --clr-primary-9: #81221b;
+  --clr-primary-10: #460d09;
+  /* define gray shade */
+  /* for paragraph */
+  --clr-gray-1: #f6f6f6;
+  --clr-gray-2: #efefef;
+  --clr-gray-3: #dbdbdb;
+  --clr-gray-4: #c6c6c6;
+  --clr-gray-5: #aeaeae;
+  --clr-gray-6: #898989;
+  /* for heading */
+  --clr-gray-7: #707070;
+  --clr-gray-8: #575757;
+  --clr-gray-9: #464646;
+  --clr-gray-10: #3e3e3e;
+  --clr-white : #fff;
+  --ff-primary : "Poppins", sans-serif;
+  --transition : all 0.3s linear;
+  --spacing : 0.25rem;
+  --radius : 0.5rem;
+  --light-shadow : 0 5px 15px rgba(0,0,0,0.1);
+  --dark-shadow : 0 5px 15px rgba(0,0,0,0.2);
+  --navbar-Height: 4rem;
+}
+
+
+.game-h2{
+  padding-top: 100px; font-size: 1rem; text-align: center; margin-bottom: 50px;font-weight: bold; color: var(--clr-white);
+}
+
+@media(min-width:768px){
+  .restartGame{
+    border: none;
+    border-radius: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: hsl(0, 100%, 70%);
+    color: white;
+    }
+    .restartGame:hover{
+      background-color: hsl(0, 95%, 50%);
+    }
+    .restartGame:active{
+      background-color: hsl(0, 95%, 30%);
+    }
+    
+  .up{
+    margin-top: 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: hsl(0, 100%, 70%);
+    color: white;
+  }
+  .up:hover{
+      background-color: hsl(0, 95%, 50%);
+    }
+    .up:active{
+      background-color: hsl(0, 95%, 30%);
+    }
+  .down{
+   
+    border: none;
+    border-radius: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: hsl(0, 100%, 70%);
+    color: white;
+  }
+  .down:hover{
+      background-color: hsl(0, 95%, 50%);
+    }
+    .down:active{
+      background-color: hsl(0, 95%, 30%);
+    }
+    .game-flex{
+      display: flex; flex-wrap: wrap; justify-content: center;
+    }
+.game-h2{
+ color: var(--clr-primary-6);
+}
+}
+@media(max-width:768px){
+  section{
+    background-color: var(--clr-primary-6);
+    display: block;
+   }
+}
 canvas {
     border:1px solid #d3d3d3;
-    background-image: url(../image/sea.png);
+    background-image: url(../images/sea.png);
 }
 .restartGame{
   border: none;
@@ -8,11 +111,11 @@ canvas {
   font-size: 30px;
   cursor: pointer;
   padding: 15px;
-  background-color: hsl(0, 100%, 70%);
+  background-color: var(--clr-primary-3);
   color: white;
   }
   .restartGame:hover{
-    background-color: hsl(0, 95%, 50%);
+    background-color: hsl(0, 100%, 70%);;
   }
   .restartGame:active{
     background-color: hsl(0, 95%, 30%);
@@ -25,46 +128,13 @@ canvas {
   font-size: 30px;
   cursor: pointer;
   padding: 15px;
-  background-color: hsl(0, 100%, 70%);
+  background-color: var(--clr-primary-3);
   color: white;
 }
 .up:hover{
-    background-color: hsl(0, 95%, 50%);
+    background-color: hsl(0, 100%, 70%);;
   }
   .up:active{
-    background-color: hsl(0, 95%, 30%);
-  }
-.left{
-
-  border: none;
-  border-radius: 25px;
-  font-size: 30px;
-  cursor: pointer;
-  padding: 15px;
-  background-color: hsl(0, 100%, 70%);
-  color: white;
-}
-.left:hover{
-    background-color: hsl(0, 95%, 50%);
-  }
-  .left:active{
-    background-color: hsl(0, 95%, 30%);
-  }
-.right{
-
-  border: none;
-  border-radius: 25px;
-  font-size: 30px;
-  cursor: pointer;
-  padding: 15px;
-  background-color: hsl(0, 100%, 70%);
-  color: white;
-
-}
-.right:hover{
-    background-color: hsl(0, 95%, 50%);
-  }
-  .right:active{
     background-color: hsl(0, 95%, 30%);
   }
 .down{
@@ -74,11 +144,11 @@ canvas {
   font-size: 30px;
   cursor: pointer;
   padding: 15px;
-  background-color: hsl(0, 100%, 70%);
+  background-color: var(--clr-primary-3);
   color: white;
 }
 .down:hover{
-    background-color: hsl(0, 95%, 50%);
+  background-color: hsl(0, 100%, 70%);;
   }
   .down:active{
     background-color: hsl(0, 95%, 30%);
@@ -94,4 +164,5 @@ canvas {
 }
 .game-move-button{
   text-align:center;width:1900px;
+  margin-bottom: 15px;
 }

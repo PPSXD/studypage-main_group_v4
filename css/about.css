@@ -1,4 +1,3 @@
-/* ===========global variable=========== */
 :root {
    
     --clr-primary-1: #fee4e2;
@@ -33,42 +32,24 @@
     --dark-shadow : 0 5px 15px rgba(0,0,0,0.2);
     --navbar-Height: 4rem;
 }
-
-@media(min-width :768px){
-    .boat-information-container{
-        text-align: center;
-        
+@media(min-width:768px){
+    .paragraph{
+        color:var(--clr-primary-6);
+        font-weight: bold;
     }
-    .boat-information-h2{
-        font-size: 2rem;
-        color: var(--clr-primary-8);
-    }
-    .boat-information-p{
-        margin-top: 3px; font-size: 1.5em;
-        color: var(--clr-primary-6);
-        margin-bottom: 15px;
-    }
-    .boat-info{
-        margin-bottom: 30px;
-        
-    }    
+    .table-center {
+        width: 90vw;
+        margin: 0 auto;
+        display: grid;
+        /* grid-template-columns: 1fr 1fr; */
+        /* column-gap: 2rem; */
+        overflow: hidden;
 }
 
-@media(max-width :768px){
-    .boat-information-container{
-        text-align: center;
+}
+@media(max-width:768px){
+    .paragraph{
+        color:var(--clr-white);
+        font-weight: bold;
     }
-    .boat-information-h2{
-        font-size: 2rem;
-        color: var(--clr-white);
-    }
-    .boat-information-p{
-        margin-top: 3px; font-size: 1.5em;
-        color: var(--clr-white);
-        margin-bottom: 15px;
-    }
-    .boat-info{
-        margin-bottom: 30px;
-        
-    }    
 }
