@@ -39,7 +39,7 @@
   padding-top: 100px; font-size: 1rem; text-align: center; margin-bottom: 50px;font-weight: bold; color: var(--clr-white);
 }
 
-@media(min-width:768px){
+@media(min-width:1033px){
   .restartGame{
     border: none;
     border-radius: 25px;
@@ -94,8 +94,15 @@
 .game-h2{
  color: var(--clr-primary-6);
 }
+.game-info{
+  margin-bottom: 30px;
+  
+}    
 }
-@media(max-width:768px){
+
+
+
+@media(max-width:1033px){
   section{
     background-color: var(--clr-primary-6);
     display: block;
@@ -104,6 +111,7 @@
 canvas {
     border:1px solid #d3d3d3;
     background-image: url(../images/sea.png);
+    /* max-width: 300px;max-height: 300px; */
 }
 .restartGame{
   border: none;
@@ -158,11 +166,16 @@ canvas {
   }
 .game-myfilter{
   position:absolute;background-color:#000000;opacity:0.3;width:500px;height:500px;display:none;
+  /* max-width: 300px;max-height: 300px; */
 }
 .game-myrestartbutton{
-  position:absolute;padding-top:220px;padding-left:10px;display:none;
+  position:absolute;padding-top:200px;padding-left:10px;display:none;
 }
 .game-move-button{
   text-align:center;width:1900px;
   margin-bottom: 15px;
 }
+.game-info{
+  margin-bottom: 30px;
+  
+}    

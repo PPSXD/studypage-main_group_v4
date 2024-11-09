@@ -51,10 +51,14 @@ img.displaySlide{
     background-color: hsla(0, 0%, 50%, 0.5);
 }
 
-@media(max-width:935px){
+@media(max-width:1033px){
     .slider img{
         max-width:  400px;
         max-height: 400px;
     }
 }
-
+@media(max-width:500px){
+    .slider button{
+        display: none;
+    }
+}

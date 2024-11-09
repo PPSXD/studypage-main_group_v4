@@ -32,8 +32,8 @@
   --dark-shadow : 0 5px 15px rgba(0,0,0,0.2);
   --navbar-Height: 4rem;
 }
-
-.sitemap-list{
+@media(min-width:1033px){
+  .sitemap-list{
     text-align: center; 
     font-size:2.5rem; 
     list-style: none;
@@ -55,8 +55,17 @@
   content: "🛥️🌊";
   margin-right: 40px;
   }
+}
 
-  @media(max-width:768px){
+
+  @media(max-width:1033px){
+    .sitemap-list{
+      text-align: center; 
+      font-size:18px; 
+      list-style: none;
+      margin-top: 120px;
+      margin-bottom: 80px;
+    }
     body{
       background:var(--clr-primary-6);
     }
@@ -67,5 +76,11 @@
     
     .sitemap-list li a:hover{
     color: var(--clr-gray-4);
+    }
+
+  
+  .sitemap-list li::before{
+    content: "🛥️🌊";
+    margin-right: 40px;
     }
   }

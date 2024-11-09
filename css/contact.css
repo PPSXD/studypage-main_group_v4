@@ -32,25 +32,28 @@
     --dark-shadow : 0 5px 15px rgba(0,0,0,0.2);
     --navbar-Height: 4rem;
 }
-@media(max-width:768px){
+@media(max-width:1033px){
     h2{
         font-size: 48px;
     }
     table{
-        text-align: center; margin: auto; border: none;
+        text-align: center; margin: auto; border: none; max-width: 500px;
     }
     tr{
         text-align: center;
     }
     td, th{
-        padding: 20px; font-size: 36px; color: var(--clr-white);
+        padding: 20px; font-size: 18px; color: var(--clr-white);
     }
     
     .address{
-        color: var(--clr-white);
+        color: var(--clr-white); font-size: 18px;
     }
     .back-to-top{
-        color: var(--clr-gray-2); text-decoration: none; font-size: 20px; padding: 10px;
+        color: var(--clr-gray-2); text-decoration: none; font-size: 20px; padding: 10px; font-size: 18px;
+    }
+    iframe{
+        max-width: 500px;
     }
     .back-to-top:hover{
         color: var(--clr-gray-4);
@@ -66,8 +69,12 @@
         
         text-align: center;
     }
+    iframe.iframe{
+        max-width: 300px;
+        max-height: 200px;
+    }
 }
-@media(min-width:768px){
+@media(min-width:1033px){
     h2{
         font-size: 48px;
     }

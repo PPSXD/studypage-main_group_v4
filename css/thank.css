@@ -32,7 +32,7 @@
     --dark-shadow : 0 5px 15px rgba(0,0,0,0.2);
     --navbar-Height: 4rem;
 }
-@media(min-width:768px){
+@media(min-width:1033px){
     .thank-info{
         margin-bottom: 10px;
         text-align: center;
@@ -68,7 +68,7 @@ p.thank-you-p{
     color:var(--clr-primary-10);
 }
 }
-@media(max-width:768px){
+@media(max-width:1033px){
     .thank-info{
         margin-bottom: 10px;
         text-align: center;

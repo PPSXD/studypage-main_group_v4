@@ -34,7 +34,7 @@
     --navbar-Height: 4rem;
 }
 
-@media(min-width :768px){
+@media(min-width :1033px){
     .boat-information-container{
         text-align: center;
         
@@ -54,7 +54,7 @@
     }    
 }
 
-@media(max-width :768px){
+@media(max-width :1033px){
     .boat-information-container{
         text-align: center;
     }

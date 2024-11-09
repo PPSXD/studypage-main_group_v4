@@ -41,7 +41,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-@media(min-width:768px){
+@media(min-width:1033px){
     
 .name, .email, .phone, .comment{
     text-align: center;
@@ -147,7 +147,7 @@ color: #ccc;
 }
 
 }
-@media(max-width:768px){
+@media(max-width:1033px){
 
     
     .name, .email, .phone, .comment{
@@ -164,6 +164,7 @@ color: #ccc;
     justify-content: center;
     /* flex: 1; */
     gap:5px;
+
     
     }
     .form-big-group p{
@@ -171,7 +172,8 @@ color: #ccc;
     color: var(--clr-white);
     font-weight: bold;
     }
-    
+
+
     /* .form-group{
         margin-bottom: 30px;
     } */
@@ -196,6 +198,7 @@ color: #ccc;
     
     textarea{
         height: 100px;
+        max-width: 300px;
     }
     input[type='submit']{
         background: var(--primary--color);
@@ -266,3 +269,15 @@ input:valid,
 textarea:valid{
     border-color:  green;
 } */
+
+@media(max-width:600px){
+    .form-big-group p{
+        margin-bottom: 30px;
+        color: var(--clr-white);
+        font-weight: bold;
+        max-width: 300px;
+        margin: auto;
+        }
+        
+
+}

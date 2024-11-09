@@ -93,7 +93,7 @@ h2 {
     overflow: hidden;
 }
 
-@media(max-width:768px){
+@media(max-width:1033px){
     body{
         background-color: var(--clr-primary-6);
     }
@@ -101,6 +101,7 @@ h2 {
         text-transform: uppercase;
         color: var(--clr-white);
         margin-top: 120px;
+        font-size: 36px;
     }
     
     .section-title span {
@@ -108,7 +109,7 @@ h2 {
     }
 }
 
-@media(min-width:768px){
+@media(min-width:1033px){
 
 .about-photo {
     width: 100%;
@@ -140,9 +141,9 @@ h2 {
     left: -1.5rem;
 }
 }
-@media(max-width:768px){
+@media(max-width:1033px){
     .about-center{
-        max-width: 768px;
+        max-width: 1033px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr;
@@ -166,7 +167,7 @@ h2 {
 /* ==========
 service
 ========== */
-@media(min-width:768px){
+@media(min-width:1033px){
 .section-center.services-center {
     display: flex;
     /* margin-bottom: var(--navbar-Height); */
@@ -193,7 +194,7 @@ article.service {
     font-size: 0.75rem;
 }
 }
-@media(max-width:768px){
+@media(max-width:1033px){
     .section-center.services-center {
         display: flex;
         flex-direction: column;
@@ -221,7 +222,7 @@ article.service {
 /* #tour{
     display: flex;
 } */
-@media(min-width:768px){
+@media(min-width:1033px){
 
     .service-heading {
         cursor: pointer;
@@ -330,19 +331,19 @@ margin-top: 10px;
     font-size: 0.75rem;
 }
 }
-@media(max-width:768px){
+@media(max-width:1033px){
     .service-heading {
         cursor: pointer;
       }
       
       .service-heading-img-off {
         display: block;
-        max-width: 500px;
+        max-width: 250px;
       }
       
       .service-heading-img-on {
         display: none;
-        max-width: 500px;
+        max-width: 250px;
       }
       
       .service-heading:hover .service-heading-img-off { 
@@ -360,12 +361,12 @@ margin-top: 10px;
       
       .boat-heading-img-off {
         display: block;
-        max-width: 500px;
+        max-width: 250px;
       }
       
       .boat-heading-img-on {
         display: none;
-        max-width: 500px;
+        max-width: 250px;
       }
       
       .boat-heading:hover .boat-heading-img-off { 
@@ -442,6 +443,7 @@ margin-top: 10px;
     text-align: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    height: 100vh;
 }
 
 .footer-links, .footer-icons{
@@ -628,13 +630,13 @@ img.logo-link {
     transform: translateX(0);
 } */
 
-@media (min-width: 768px) {
+@media (min-width: 1033px) {
     .nav-mobile {
         display: none;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1033px) {
     /* navbar */
     .nav-list {
         display: none;
@@ -708,7 +710,7 @@ img.logo-link {
 Hero section1
 ========= */
 
-@media(min-width:768px){
+@media(min-width:1033px){
     .background-video {
         position: fixed;
         left: 0;
@@ -769,7 +771,7 @@ color: var(--clr-primary-6);
     background: var(--clr-primary-2);
 }
 }
-@media(max-width:768px){
+@media(max-width:1033px){
 
 .background-video{
     display: none;
