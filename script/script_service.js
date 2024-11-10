@@ -69,9 +69,9 @@ const productsHTML = products.map(
     (product) => `<strong>$${product.price}</strong>
                   <button class="service-button" id=${product.id}>Add to Cart</button>
                   <div class="mid-${product.id} unit">
-                    <button onclick={decrItem(${product.id})}>-</button>
+                    <button class ="unit-button" onclick={decrItem(${product.id})}>-</button>
                     <p>${product.quantity}</p>
-                    <button onclick={incrItem(${product.id})}>+</button>
+                    <button class ="unit-button" onclick={incrItem(${product.id})}>+</button>
                   </div>`);
 
 for (let i = 0; i <= productsHTML.length-1; i++) {
@@ -96,6 +96,17 @@ document.querySelector(".payment-button-reset").addEventListener("click", (e) =>
   }
   updateCart();
   getTotal(cart);
+});
+
+window.addEventListener('beforeunload', function (event) {
+  cart = [];
+  for (let i = 1; i <= products.length; i++) {
+    const temp = document.querySelector(".mid-" + i + " p");
+    temp.innerText = 1;
+  }
+  updateCart();
+  getTotal(cart);
+  console.log('Page is about to be reloaded or closed');
 });
 
 function addToCart(products, id){

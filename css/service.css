@@ -7,32 +7,32 @@ div::-webkit-scrollbar {
   width: 100%;
 }
 
-.service-container {
+/* .service-container {
   position: fixed;
   top: 180px;
   left: 30px;
   width: 80%;
   height: 70%;
   border: 1px solid white;
-  border-radius: 25px;
+  border-radius: 25px; */
 
   /* display: grid; */
-  background: transparent;
+  /* background: transparent;
   color: white;
   padding: 15px;
   overflow-y: scroll; 
-}
+} */
 
-.service-event {
+/* .service-event {
   display: flex;
-  font-size: 16px;
+  font-size: 16px; */
   /* justify-content: space-evenly;
   top: 400px;
   left: 10px;
   width: 1570px;
   height: 30px; */
   /* border: 2px solid yellow; */
-}
+/* } */
 
 .service-img {
   margin-bottom: 20px;

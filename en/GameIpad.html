@@ -13,9 +13,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <link rel="stylesheet" href="../css/lightbox.min.css">
-<link rel="stylesheet" href="../css/boat.css">
 <link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../css/boat-slider.css">
+<link rel="stylesheet" href="../css/gameIpad.css">
 
 
 <title>ERB Yachting</title>
@@ -76,39 +75,37 @@
                 <li><a href="../tc/index.html" class="lmobile-nav-link" title="繁體中文">繁體中文</a></li>
                 <li><a href="../sc/index.html" class="mobile-nav-link" title="簡體中文">簡體中文</a></li>
                 </ul>
+                
         </div>
     </nav>
-<div>
-    <video class="background-video"  autoplay muted loop style="margin: auto;">
-        <source src="../video/background-video-3.mp4" type="video/mp4">
-    </video>
-    <section class="section" id="about">
-      
-
-            <div class="section-title">
-            <h2 class="hero-h2">Regal LS4</h2>
-            </div>
-            <article>
-              <div class="slider">
-                <div class="slides" id="slides">
-                  <div><a class="slide-boat" href="../Speed-boat/regal-LS4/1.jpg"  data-lightbox="regal-LS41" data-title="Regal LS4"><img class="slide" src="../Speed-boat/regal-LS4/1.jpg" alt="Regal LS4"></a></div>
-                  <div><a class="slide-boat" href="../Speed-boat/regal-LS4/2.jpg"  data-lightbox="regal-LS42" data-title="Regal LS4"><img class="slide" src="../Speed-boat/regal-LS4/2.jpg" alt="Regal LS4"></a></div>
-                  <div><a class="slide-boat" href="../Speed-boat/regal-LS4/3.jpg"  data-lightbox="regal-LS43" data-title="Regal LS4"><img class="slide" src="../Speed-boat/regal-LS4/3.jpg" alt="Regal LS4"></a></div>
-                  <div><a class="slide-boat" href="../Speed-boat/regal-LS4/4.jpg"  data-lightbox="regal-LS44" data-title="Regal LS4"><img class="slide" src="../Speed-boat/regal-LS4/4.jpg" alt="Regal LS4"></a></div>
-                </div>
-                <button class="prev" onclick="prevSlide()">&#10094</button>
-                <button class="next" onclick="nextSlide()">&#10095</button>
-            </div>
+    <div>
+        <video class="background-video"  autoplay muted loop style="margin: auto;">
+            <source src="../video/background-video-3.mp4" type="video/mp4">
+        </video>
+        <section class="section" id="about">
+          
     
-            <div class="boat-information-container">
-              <h2 class="boat-information-h2">Information</h2>
-              <p class="boat-information-p">Length: 15m<br>Guests: 20/person<br>Crew: 2/person<br>Cost: HK$5000.00 per day<br><br>Facilities:<br><br>2 Room<br>Restroom<br>Kitchen<br>Air Conditioner<br>TV<br>WiFi</p>
-            </div>
-            </div>
-  </article>
-
-    </section>
-</div>
+                <div class="section-title">
+                <h2 class="hero-h2">Game</h2>
+                </div>
+                <article>
+                    <h2 class="game-h2">Please click and use the button "UP" and "DOWN" that play the boat game.</h2>
+                    <div class="game-flex" >
+                    <div id="myfilter" class="game-myfilter"></div>
+                    <div id="myrestartbutton" class="game-myrestartbutton"><button class="restartGame" onclick="restartGame()">Restart</button></div>
+                    <div id="canvascontainer"></div>
+                    <br>
+                    <div class="game-move-button">
+                      <button class="up" ontouchstart="moveup()" onmousedown="moveup()" onmouseup="clearmove()">UP</button><br><br>
+                      <button class="down" ontouchstart="movedown()" onmousedown="movedown()" onmouseup="clearmove()">DOWN</button>
+        </div></div>
+    
+    
+      </article>
+      
+    
+        </section>
+    </div>
    
 <footer class="section footer">
     <ul class="footer-icons">
@@ -165,10 +162,11 @@
 </footer>
 
 
-    <script src="../script/app.js"></script>
-    <script src="../script/slider.js"></script>
+
+
     <script src="../script/index.js"></script>
+    <script src="../script/gameIpad.js"></script>
     <script src="../script/script_logo.js"></script>
-    <script src="../script/lightbox-plus-jquery.min.js"></script>
+    <script src="../script/app.js"></script>
 </body>
 </html>
