@@ -1064,10 +1064,12 @@ color: var(--clr-white);
     .unit p {
         width: 70%;
         font-size: 18px;
+        margin: auto;
     }
     .unit-button {
         padding: 5px;
         width: 70%;
+        margin: auto;
     }
 
     .payment-button {
