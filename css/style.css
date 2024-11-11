@@ -912,7 +912,6 @@ color: var(--clr-white);
     font-weight: 700;
     width: 40%;
     margin-top: 10px;
-    /* font-size: 14px; */
 }
   
 .service-button:hover {
@@ -942,7 +941,7 @@ color: var(--clr-white);
     cursor: pointer;
     transition: 0.1s ease-in-out;
     font-weight: 700;
-    width: 15%;
+    width: 25%;
     /* font-size: 14px; */
 }
 
@@ -1026,4 +1025,64 @@ color: var(--clr-white);
 
 .payment-button-paid:active {
     transform: translateY(2px);
+}
+
+@media(max-width:1033px){
+
+    .service-img figcaption {
+        font-size: 8px;
+    }
+
+    .service strong {
+        font-size: 12px;
+    }
+
+    .service-content .service {
+        padding: 0px;
+    }
+    .service-content p {
+        font-size: 8px;
+        padding: 10px 0px 0px 0px;
+        width: 90%;
+    }
+
+    .service-content ul {
+        font-size: 8px;
+    }
+
+    .service .service-button {
+        font-size: 10px;
+        width: 90%;
+    }
+
+    .service .unit {
+        margin-top: 15%;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .unit p {
+        width: 70%;
+        font-size: 18px;
+    }
+    .unit-button {
+        padding: 5px;
+        width: 70%;
+    }
+
+    .payment-button {
+        margin-top: 2%;
+    }
+
+    .payment-button-reset {
+        font-size: 10px;
+        width: 15%;
+        margin-right: 20px;
+    }
+
+    .payment-button-paid {
+        font-size: 10px;
+        width: 15%;
+        margin-right: 10px;
+    }
 }

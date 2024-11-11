@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
     <title>ERB Yachting</title>
     <meta name="description" content="ERB Yachting" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="ERB Yachting Group" />
     <meta name="robots" content="index, follow" />
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/invoice.css">
     <link rel="stylesheet" href="../css/invocie-print.css" media="print">
     <link rel="shortcut icon" href="../favicon/favicon.png" type="image/x-icon">
@@ -32,8 +36,8 @@
     <img src="../images/favicon/favicon.ico" alt="Company Logo" >
     <h2>Invoice</h2>
 
-    <p>Invoice Number: #123456</p>
-    <p>Date: 2023-12-03</p>
+    <p>Invoice Number: <span id="number"></p>
+    <p>Date: <span id="currentDate"></span></p>
   </div>
   </div>
     <div class="invoice-container">
@@ -71,6 +75,7 @@
 </div>
     </div>
   </div>
+  <script src="../script/currentdate.js"></script>
 <script src="../script/invocie-print.js"></script>
     <script src="../script/script_invoice.js"></script>
    
