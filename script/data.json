@@ -1,0 +1,20 @@
+{ 
+    "boats": [
+        { "id": 1, "name": "38 Surf",             "price": 5000, "quantity": 0, "type": "boat"},
+        { "id": 2, "name": "Regal LS4",           "price": 5000, "quantity": 0, "type": "boat"},
+        { "id": 3, "name": "Regal 42 Fly",        "price": 5000, "quantity": 0, "type": "boat"},
+        { "id": 4, "name": "Regal 38 Grande",     "price": 8000, "quantity": 0, "type": "boat"},
+        { "id": 5, "name": "Beneteau Oceanis 60", "price": 8000, "quantity": 0, "type": "boat"},
+        { "id": 6, "name": "Oceanco Black Pearl", "price": 8000, "quantity": 0, "type": "boat"},
+        { "id": 7, "name": "Bail 5.8",            "price": 80000, "quantity": 0, "type": "boat"}
+    ],
+
+    "products": [
+        { "id": 1, "name": "DJ onboard",           "price": 2500, "quantity": 0, "type": "service"},
+        { "id": 2, "name": "water-toy",            "price": 1200, "quantity": 0, "type": "service"},
+        { "id": 3, "name": "catering-onboard",     "price": 1500, "quantity": 0, "type": "service"},
+        { "id": 4, "name": "asian-style",          "price": 400,  "quantity": 0, "type": "service"},
+        { "id": 5, "name": "mediterranean-style",  "price": 500,  "quantity": 0, "type": "service"},
+        { "id": 6, "name": "continental-style",    "price": 550,  "quantity": 0, "type": "service"}
+    ]
+}  

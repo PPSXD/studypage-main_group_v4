@@ -1,15 +1,8 @@
-  $('#mark-1').hover(function() {
-    $(this).addClass('fa-flip');
-    }, function() {
-    $(this).removeClass('fa-flip'); 
-    });
-  $('#mark-2').hover(function() {
-    $(this).addClass('fa-flip');
-    }, function() {
-    $(this).removeClass('fa-flip'); 
-    });
-    $('#mark-3').hover(function() {
-      $(this).addClass('fa-flip');
-      }, function() {
-      $(this).removeClass('fa-flip'); 
-      });
+$('#mark-1').hover(function() { $(this).addClass('fa-flip');}, 
+                   function() { $(this).removeClass('fa-flip');});
+
+$('#mark-2').hover(function() { $(this).addClass('fa-flip');}, 
+                   function() { $(this).removeClass('fa-flip');});
+
+$('#mark-3').hover(function() { $(this).addClass('fa-flip');},
+                   function() { $(this).removeClass('fa-flip'); });
