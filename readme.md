@@ -1,5 +1,7 @@
 Homepage
 
+https://tranquil-crepe-0bdce4.netlify.app/
+
 https://ppsxd.github.io/studypage-main_group_v4/
 
 20241111
