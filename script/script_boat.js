@@ -4,14 +4,22 @@ import data from "../script/data.json" with {type: "json"};
 let cart = [];
 
 // Prepare the price, addCart button, deleteItem, quantity, addItem for service HTML
-let boatsHTML = data.boats.map(
-  (boat) => `<strong>$${boat.price}</strong>
-             <button class="boat-button" id=${boat.id}>Add to Cart</button>
-             <div class="mid-${boat.id} unit">
-             <button class ="unit-button unit-del-button" id=${boat.id}>-</button>
-             <p>${boat.quantity}</p>
-             <button class ="unit-button unit-add-button" id=${boat.id}>+</button>
-             </div>`);
+// let boatsHTML = data.boats.map(
+//   (boat) => `<strong>$${boat.price}</strong>
+//              <button class="boat-button" id=${boat.id}>Add to Cart</button>
+//              <div class="mid-${boat.id} unit">
+//              <button class ="unit-button unit-del-button" id=${boat.id}>-</button>
+//              <p>${boat.quantity}</p>
+//              <button class ="unit-button unit-add-button" id=${boat.id}>+</button>
+//              </div>`);
+
+             let boatsHTML = data.boats.map(
+              (boat) => `<strong>$${boat.price}</strong>                        
+                         <div class="mid-${boat.id} unit">
+                         <button class ="unit-button unit-del-button" id=${boat.id}>-</button>
+                         <p>${boat.quantity}</p>
+                         <button class ="unit-button unit-add-button" id=${boat.id}>+</button>
+                         </div>`);             
 
 // Insert the prepared price, addCart button, deleteItem, quantity, addItem to service HTML
 for (let i = 0; i <= boatsHTML.length-1; i++) {

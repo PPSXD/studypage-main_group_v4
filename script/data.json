@@ -5,8 +5,8 @@
         { "id": 3, "name": "Regal 42 Fly",        "price": 5000, "quantity": 0, "type": "boat"},
         { "id": 4, "name": "Regal 38 Grande",     "price": 8000, "quantity": 0, "type": "boat"},
         { "id": 5, "name": "Beneteau Oceanis 60", "price": 8000, "quantity": 0, "type": "boat"},
-        { "id": 6, "name": "Oceanco Black Pearl", "price": 8000, "quantity": 0, "type": "boat"},
-        { "id": 7, "name": "Bail 5.8",            "price": 80000, "quantity": 0, "type": "boat"}
+        { "id": 6, "name": "Oceanco Black Pearl", "price": 80000, "quantity": 0, "type": "boat"},
+        { "id": 7, "name": "Bail 5.8",            "price": 8000, "quantity": 0, "type": "boat"}
     ],
 
     "products": [

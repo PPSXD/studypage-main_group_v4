@@ -88,13 +88,28 @@ body{
 }
 .cart-item{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
-  }
-  
-.qty{
-    margin-right: 100px
 }
+
+.cart-item h3 {
+  width: 40%;  
+}
+
+.cart-item .qty {
+  width: 20%;
+  padding-left: 80px;
+}
+
+.cart-item .amount {
+  width: 40%;
+  text-align: right;
+}
+  
+/* .qty{
+    margin-right: 100px
+} */
+
   .cart-noOfItems {
     display: flex;
   }

@@ -1,27 +1,25 @@
 import data from "../script/data.json" with {type: "json"};
 
-// Define service product list
-// const products = [
-//     { id: 1, name: "DJ onboard",           price: 2500, quantity: 0},
-//     { id: 2, name: "water-toy",            price: 1200, quantity: 0},
-//     { id: 3, name: "catering-onboard",     price: 1500, quantity: 0},
-//     { id: 4, name: "asian-style",          price: 400,  quantity: 0},
-//     { id: 5, name: "mediterranean-style",  price: 500,  quantity: 0},
-//     { id: 6, name: "continental-style",    price: 550,  quantity: 0},
-//   ];
-
 // Init a cart list
 let cart = [];
 
 // Prepare the price, addCart button, deleteItem, quantity, addItem for service HTML
-const productsHTML = data.products.map(
-      (product) => `<strong>$${product.price}</strong>
-                    <button class="service-button" id=${product.id}>Add to Cart</button>
-                    <div class="mid-${product.id} unit">
-                      <button class ="unit-button unit-del-button" id=${product.id}">-</button>
-                      <p>${product.quantity}</p>
-                      <button class ="unit-button unit-add-button" id=${product.id}}>+</button>
-                    </div>`);
+// const productsHTML = data.products.map(
+//       (product) => `<strong>$${product.price}</strong>
+//                     <button class="service-button" id=${product.id}>Add to Cart</button>
+//                     <div class="mid-${product.id} unit">
+//                       <button class ="unit-button unit-del-button" id=${product.id}">-</button>
+//                       <p>${product.quantity}</p>
+//                       <button class ="unit-button unit-add-button" id=${product.id}}>+</button>
+//                     </div>`);
+
+                    const productsHTML = data.products.map(
+                      (product) => `<strong>$${product.price}</strong>
+                                    <div class="mid-${product.id} unit">
+                                      <button class ="unit-button unit-del-button" id=${product.id}">-</button>
+                                      <p>${product.quantity}</p>
+                                      <button class ="unit-button unit-add-button" id=${product.id}}>+</button>
+                                    </div>`);
 
 // Insert the prepared price, addCart button, deleteItem, quantity, addItem to service HTML
 for (let i = 0; i <= productsHTML.length-1; i++) {
@@ -137,7 +135,6 @@ function addItem(products, id) {
   const cartProduct = cart.find((product) => { return ((product.id === id) && (product.type === "service")) });
   
   // console.log(cartProduct);
-  // ===========================
   // If cart list is not empty, add cartProduct in existing cart list
   // if (cartProduct != undefined && product.id == cartProduct.id) {
   if (cartProduct != undefined) {
@@ -159,15 +156,7 @@ function addItem(products, id) {
     cart[0].quantity = 1;
     temp.innerText = cart[0].quantity;
   }
-  // =============================
 
-  // for (let i = 0; i < cart.length; i++) {
-  // if (cart[i] && cart[i].id == id) {
-  // cart[i].quantity += 1;
-  // const temp = document.querySelector(".mid-" + id + " p");
-  // temp.innerText = cart[i].quantity;
-  // }
-  // }
   updateCart();
   getTotal(cart);
 }
