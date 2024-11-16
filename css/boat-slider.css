@@ -1,3 +1,30 @@
+:root {
+    --clr-primary-1: #ecf5fc;
+    --clr-primary-2: #b1cce4;
+    --clr-primary-3: #77a2cc;
+    --clr-primary-4: #3c79b4;
+    --clr-primary-5: #014f9c;
+        /* for paragraph */
+        --clr-gray-1: #f6f6f6;
+        --clr-gray-2: #efefef;
+        --clr-gray-3: #dbdbdb;
+        --clr-gray-4: #c6c6c6;
+        --clr-gray-5: #aeaeae;
+        --clr-gray-6: #898989;
+        --clr-gray-7: #707070;
+        --clr-gray-8: #575757;
+        --clr-gray-9: #464646;
+        --clr-gray-10: #3e3e3e;
+        --clr-white : #fff;
+        --ff-primary : "Poppins", sans-serif;
+        --transition : all 0.3s linear;
+        --spacing : 0.25rem;
+        --radius : 0.5rem;
+        --light-shadow : 0 5px 15px rgba(0,0,0,0.1);
+        --dark-shadow : 0 5px 15px rgba(0,0,0,0.2);
+        --navbar-Height: 4rem;
+}
+
 @media(min-width:1033px){
 .slider{
     position: relative;

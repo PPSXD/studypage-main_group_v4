@@ -1,7 +1,7 @@
 /* ===========global variable=========== */
 :root {
    
-  --clr-primary-1: #fee4e2;
+  /* --clr-primary-1: #fee4e2;
   --clr-primary-2: #ffccc9;
   --clr-primary-3: #fdaaa4;
   --clr-primary-4: #fa786f;
@@ -10,7 +10,12 @@
   --clr-primary-7: #c7261b;
   --clr-primary-8: #9b2119;
   --clr-primary-9: #81221b;
-  --clr-primary-10: #460d09;
+  --clr-primary-10: #460d09; */
+  --clr-primary-1: #ecf5fc;
+  --clr-primary-2: #b1cce4;
+  --clr-primary-3: #77a2cc;
+  --clr-primary-4: #3c79b4;
+  --clr-primary-5: #014f9c;
   /* define gray shade */
   /* for paragraph */
   --clr-gray-1: #f6f6f6;
@@ -37,16 +42,16 @@
 html,
 body{
     font-family: 'Times New Roman', Times, serif;
-    background-color:var(--clr-primary-4);
+    background-color:var(--clr-gray-2);
 }
 .invoice{
     max-width: 1100px;
-    background-color: #1b2123;
+    background-color: var(--clr-white);
     margin: 0 auto;
     margin-top:  90px;
     padding: 70px 50px;
     border-radius: 10px;
-    color: var(--clr-primary-4);
+    color: black;
     /* box-shadow: 5px 5px 5px rgba(0, 0, 0,0.1); */
 }
 .invoice-flex{

@@ -1,6 +1,6 @@
 :root {
    
-    --clr-primary-1: #fee4e2;
+    /* --clr-primary-1: #fee4e2;
     --clr-primary-2: #ffccc9;
     --clr-primary-3: #fdaaa4;
     --clr-primary-4: #fa786f;
@@ -9,7 +9,12 @@
     --clr-primary-7: #c7261b;
     --clr-primary-8: #9b2119;
     --clr-primary-9: #81221b;
-    --clr-primary-10: #460d09;
+    --clr-primary-10: #460d09; */
+    --clr-primary-1: #ecf5fc;
+    --clr-primary-2: #b1cce4;
+    --clr-primary-3: #77a2cc;
+    --clr-primary-4: #3c79b4;
+    --clr-primary-5: #014f9c;
     /* define gray shade */
     /* for paragraph */
     --clr-gray-1: #f6f6f6;
@@ -40,32 +45,33 @@
 .thank-you-h2{
     font-size: 72px;
     font-family: 'Times New Roman', Times, serif;
-    color: var(--clr-primary-6);
+    color: var(--clr-primary-4);
 }
 .thank-you-h2 span{
-    color: var(--clr-primary-8);
+    color: var(--clr-primary-4);
 }
 .fa-check{
     font-size: 148px;
-    color: green;
+    /* color: green; */
+    color: rgb(70, 202, 70);
     font-weight: bold;
 }
 p.thank-you-p{
     font-size: 24px;
     font-weight: bold;
-    color: var(--clr-primary-6);
+    color: var(--clr-primary-4);
 }
 .thank-you-a{
     text-decoration: none;
-    color: var(--clr-primary-6);
+    color: var(--clr-primary-4);
     font-weight: bold;
     font-size: 20px;
 }
 .thank-you-a:hover{
-    color: var(--clr-primary-8);
+    color: var(--clr-primary-5);
 }
 .thank-you-a:active{
-    color:var(--clr-primary-10);
+    color:var(--clr-primary-5);
 }
 }
 @media(max-width:1033px){
@@ -76,32 +82,32 @@ p.thank-you-p{
     .thank-you-h2{
         font-size: 72px;
         font-family: 'Times New Roman', Times, serif;
-        color: var(--clr-gray-2);
+        color: var(--clr-primary-4);
     }
     .thank-you-h2 span{
-        color: var(--clr-gray-2);
+        color: var(--clr-primary-4);
     }
     .fa-check{
         font-size: 148px;
-        color: green;
+        color: rgb(70, 202, 70);
         font-weight: bold;
     }
     p.thank-you-p{
         font-size: 24px;
         font-weight: bold;
-        color: var(--clr-gray-2);
+        color: var(--clr-primary-4);
     }
     .thank-you-a{
         text-decoration: none;
-        color: var(--clr-gray-2);
+        color: var(--clr-primary-4);
         font-weight: bold;
         font-size: 20px;
     }
     .thank-you-a:hover{
-        color: var(--clr-gray-4);
+        color: var(--clr-primary-5);
     }
     .thank-you-a:active{
-        color:var(--clr-gray-6);
+        color:var(--clr-primary-5);
     }
     }
     

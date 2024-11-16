@@ -1,7 +1,7 @@
 /* ===========global variable=========== */
 :root {
    
-  --clr-primary-1: #fee4e2;
+  /* --clr-primary-1: #fee4e2;
   --clr-primary-2: #ffccc9;
   --clr-primary-3: #fdaaa4;
   --clr-primary-4: #fa786f;
@@ -10,7 +10,12 @@
   --clr-primary-7: #c7261b;
   --clr-primary-8: #9b2119;
   --clr-primary-9: #81221b;
-  --clr-primary-10: #460d09;
+  --clr-primary-10: #460d09; */
+  --clr-primary-1: #ecf5fc;
+  --clr-primary-2: #b1cce4;
+  --clr-primary-3: #77a2cc;
+  --clr-primary-4: #3c79b4;
+  --clr-primary-5: #014f9c;
   /* define gray shade */
   /* for paragraph */
   --clr-gray-1: #f6f6f6;
@@ -36,7 +41,12 @@
 
 
 .game-h2{
-  padding-top: 100px; font-size: 1rem; text-align: center; margin-bottom: 50px;font-weight: bold; color: var(--clr-white);
+  padding-top: 100px; 
+  font-size: 1rem; 
+  text-align: center; 
+  margin-bottom: 50px;
+  font-weight: bold; 
+  color: var(--clr-primary-4);
 }
 
 @media(min-width:1033px){
@@ -92,7 +102,7 @@
       display: flex; flex-wrap: wrap; justify-content: center;
     }
 .game-h2{
- color: var(--clr-primary-6);
+ color: var(--clr-gray-1);
 }
 .game-info{
   margin-bottom: 30px;
@@ -104,7 +114,7 @@
 
 @media(max-width:1033px){
   section{
-    background-color: var(--clr-primary-4);
+    background-color: var(--clr-gray-2);
     display: block;
    }
 }
